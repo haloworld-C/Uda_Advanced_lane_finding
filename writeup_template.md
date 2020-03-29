@@ -165,9 +165,9 @@ Here's a [vedio1](./my_output/project_out.mp4)
 ### Discussion
 
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
-
-[image8]: ./my_output/failure_transform.png "transform failure"
-[image9]: ./my_output/failure-3.png "siding window failure"
+[//]: # (Image References)
+[image8]: ./my_output/failure_transform.PNG "transform failure"
+[image9]: ./my_output/failure-3.PNG "siding window failure"
 [image10]: ./my_output/pipeline.png "my pipe line"
 Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further.  
 1. problem or issues：
