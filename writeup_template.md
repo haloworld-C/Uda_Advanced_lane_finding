@@ -22,6 +22,7 @@ The goals / steps of this project are the following:
 [image1]: ./my_output/undistort.jpg "Undistorted"
 [image2]: ./test_images/test1.jpg "test 1 pic"
 [image3]: ./my_output/undistort_example.png "undistort result"
+[image3.5]: ./my_output/binary_conbined.PNG "filters"
 [image4]: ./my_output/transform3.png "image transform Example"
 [image5]: ./my_output/failure_transform.png "failure transform Example"
 [image6]: ./my_output/line-point-detected.PNG "line points detected"
@@ -65,7 +66,7 @@ This step is really simple:
 
 I used a combination of color and gradient thresholds to generate a binary image (thresholding steps at lines # through # in `another_file.py`).  Here's an example of my output for this step.  (note: this is not actually from one of the test images)
 
-![alt text][image3]
+![alt text][image3.5]
 
 #### 3. Describe how (and identify where in your code) you performed a perspective transform and provide an example of a transformed image.
 
