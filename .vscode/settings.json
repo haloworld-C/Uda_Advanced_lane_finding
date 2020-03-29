@@ -1,0 +1,15 @@
+{
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": false,
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-c>": false,
+        "<C-x>": false,
+        "<C-f>": false,
+        "<C-h>": false,
+        "<C-s>": false,
+        "<C-z>": false,
+        "<C-y>": false,
+    }
+
+}
