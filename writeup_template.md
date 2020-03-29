@@ -126,6 +126,7 @@ Basicly, I identify these point in transformed binary_warped image by sliding wi
 1. caculate the base point of each line at bottom of the image with 'histogram method'
 2. define the slide windows size, and find the point in this windows. then iterate this method by update(moving) the base point of windows in each layer(if the points in windows is more than defined threhold the caculate the center x of these point as updated base point. Ohterwize ,keep the base points as last one). These steps are difined in **find_lane_pixels**, I alse defined a function **dect_point_rectangle** to he;p identifing whether point nonezero is in current window box.
 3. fit the points identifed last step with **np.polyfit(pointy, pointx, 2)**, this function will return the coefficient of line of 'x = a*x^2 + b*x + c'. Then I try to genarate a series of points: y with **np.linspace** and resposed x with coefficient. Then add these point in binary_warped image.
+4.  when I processed the first image from the radio, I try to find lane pixels with function `dect_point_region()` in `helper_p2.py` which receive the line fit and margion.
 #### 5. Describe how (and identify where in your code) you calculated the radius of curvature of the lane and the position of the vehicle with respect to center.
 
 I did this in lines # 235 # in function **caculate_r** , this function will return the curvature of bottom line of left and right lane using given formulation. And I returned the curvature info and add it in image in 'Advanced_lane_fiding.py' of line # 86 # to display it.
@@ -144,6 +145,11 @@ And this caculated curvature of line is in the real worlf cause I get the fit pa
 I implemented this step in lines # 89 # in my code in `Advanced_lane_finding.py` in the function `conners_warp()` in `helper_p2.py`.  Here is an example of my result on a test image:
 
 ![alt text][image7]
+
+#### 7. Define a line() class to reuse the line parameters in processed image frame.
+The *line()* class is define in `helper_p2.py`. In general, I store some useful parameters in it , such as line radius, line_width, last_line_fit, best_line_fit and the distortion parameters.
+There is one parameter to note:confidence in line # 75 # in `helper_p2.py`, this is a indicator wether the line fited well.
+I build this confidence in line # 438 # in `helper_p2` . This confidence can be build in a better way（with value between 0 and 1） later.
 
 ---
 
