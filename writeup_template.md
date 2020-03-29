@@ -180,7 +180,7 @@ Here I'll talk about the approach I took, what techniques I used, what worked an
 ![alt text][image10]
 The picture up is the pipeline expreed by flows when I processes vedio(process image with distortion and apply fillters is simplify). For now the pipeline works well with `project_vedio.mp4` while having some flaws with chanllenge videos which I will work on later. 
 3. possible improvement ways:
-   * conbining the dection of line at the bottom of image
+   * combining the dection of line in P1 at the bottom of image
    * tuning parameter to get better  binary_warped image 
    * add a filter of h channel of hsv image(avoid shade)
    * rebuild a confidence function representing how the lines fited. 
